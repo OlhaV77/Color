@@ -12,36 +12,40 @@ class Run {
     Green - 0 255 0
  */
 
-    static Color[] colors = new Color[5];
 
     public static void main(String[] args) {
-        String[] array = {"red", "grean"};
-//        for(int i =0; i< array.length;i++) {
-//            colors[i].name = array[i];
-//        }
-        colors[0] = new Color("Red");
-        colors[1] = new Color("Grean");
-        colors[2] = new Color("Black");
-        colors[3] = new Color("Whit");
-        colors[4] = new Color("Blue");
+        Color[] colors = new Color[5];
+        String[] names = {"red", "blue", "black", "white", "green"};
+        int[] firstColorField = new int[]{1, 0, 1, 0, 0};
+        int[] secondColorField = new int[]{53, 0, 02, 64, 51};
+        int[] thirdColorField = new int[]{255, 255, 255, 000, 255};
 
-        int[] firstColorField = {1, 0, 1, 0, 0};
-        int[] secondColorField = {53, 0, 02, 64, 51};
-        int[] thirdColorField = {255, 255, 255, 000, 255};
-
-        for (int i = 0; i < firstColorField.length; i++) {
-            System.out.println(colors[i].name + ": " + (firstColorField[i] + " " + secondColorField[i] + " " + thirdColorField[i]));
+        for (int i = 0; i < names.length; i++) {
+            colors[i] = new Color(names[i]);
+            colors[i].names = new String(String.valueOf(colors[i].names + ": " + firstColorField[i] + " " + secondColorField[i] + " " + thirdColorField[i]));
+            System.out.println(colors[i].names);
         }
     }
 }
 
-
 class Color {
-    String name;
+    String names;
 
     public Color(String name) {
-        this.name = name;
+        this.names = name;
+    }
+
+    int[] thirdColorField;
+    int[] firstColorField;
+    int[] secondColorField;
+
+    Color(int[] firstColor, int[] secondColor, int[] thirdColor) {
+        firstColorField = firstColor;
+        secondColorField = secondColor;
+        thirdColorField = thirdColor;
     }
 }
+
+
 
 
