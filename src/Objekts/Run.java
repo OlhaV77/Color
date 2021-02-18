@@ -1,5 +1,10 @@
 package Objekts;
 
+import org.w3c.dom.ls.LSOutput;
+
+import javax.crypto.spec.PSource;
+import java.util.Scanner;
+
 class Run {
     /*
     Array of size 5, which will contain colors (color object)!
@@ -11,22 +16,50 @@ class Run {
     Blue - 0 0 255
     Green - 0 255 0
  */
+    static int scannerRedColorField() {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Red color field 0 - 255 : ");
+        return scan.nextInt();
+    }
 
+    static int scannerBlueColorField() {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Green color field 0 - 255 : ");
+        return scan.nextInt();
+    }
+
+    static int scannerGreenColorField() {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Blue color field 0 - 255: ");
+        return scan.nextInt();
+    }
 
     public static void main(String[] args) {
         Color[] colors = new Color[5];
-        String[] names = {"red", "blue", "black", "white", "green"};
-        int[] firstColorField = new int[]{1, 0, 1, 0, 0};
-        int[] secondColorField = new int[]{53, 0, 02, 64, 51};
-        int[] thirdColorField = new int[]{255, 255, 255, 000, 255};
+        String[] names = {"Red", "Blue", "Green", "White", "Orange"};
+
+        int redColorField = scannerRedColorField();
+        int greenColorField = scannerGreenColorField();
+        int blueColorField = scannerBlueColorField();
+        System.out.println();
+
 
         for (int i = 0; i < names.length; i++) {
             colors[i] = new Color(names[i]);
-            colors[i].names = new String(String.valueOf(colors[i].names + ": " + firstColorField[i] + " " + secondColorField[i] + " " + thirdColorField[i]));
-            System.out.println(colors[i].names);
+            if (redColorField <= 255) {
+                if (greenColorField <= 255) {
+                    if (blueColorField <= 255) {
+                        colors[i].names = new String(String.valueOf(colors[i].names + ": " + redColorField + " " + greenColorField + " " + blueColorField));
+                   System.out.println(colors[i].names);
+                }
+            }
+        }
+            continue;
         }
     }
+
 }
+
 
 class Color {
     String names;
@@ -35,17 +68,18 @@ class Color {
         this.names = name;
     }
 
-    int[] thirdColorField;
-    int[] firstColorField;
-    int[] secondColorField;
+    int[] redColorField;
+    int[] greenColorField;
+    int[] blueColorField;
 
     Color(int[] firstColor, int[] secondColor, int[] thirdColor) {
-        firstColorField = firstColor;
-        secondColorField = secondColor;
-        thirdColorField = thirdColor;
+        redColorField = firstColor;
+        greenColorField = secondColor;
+        blueColorField = thirdColor;
     }
-}
 
+
+}
 
 
 
