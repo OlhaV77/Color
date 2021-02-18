@@ -16,49 +16,22 @@ class Run {
     Blue - 0 0 255
     Green - 0 255 0
  */
-    static int scannerRedColorField() {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Red color field 0 - 255 : ");
-        return scan.nextInt();
-    }
-
-    static int scannerBlueColorField() {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Green color field 0 - 255 : ");
-        return scan.nextInt();
-    }
-
-    static int scannerGreenColorField() {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Blue color field 0 - 255: ");
-        return scan.nextInt();
-    }
 
     public static void main(String[] args) {
         Color[] colors = new Color[5];
         String[] names = {"Red", "Blue", "Green", "White", "Orange"};
 
-        int redColorField = scannerRedColorField();
-        int greenColorField = scannerGreenColorField();
-        int blueColorField = scannerBlueColorField();
-        System.out.println();
-
+        int redColorField = 245;
+        int greenColorField = 123;
+        int blueColorField = 03;
 
         for (int i = 0; i < names.length; i++) {
             colors[i] = new Color(names[i]);
-            if (redColorField <= 255) {
-                if (greenColorField <= 255) {
-                    if (blueColorField <= 255) {
-                        colors[i].names = new String(String.valueOf(colors[i].names + ": " + redColorField + " " + greenColorField + " " + blueColorField));
+            colors[i].names = new String(String.valueOf(colors[i].names + ": " + redColorField + " " + greenColorField + " " + blueColorField));
                    System.out.println(colors[i].names);
                 }
             }
         }
-            continue;
-        }
-    }
-
-}
 
 
 class Color {
