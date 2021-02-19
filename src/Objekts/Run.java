@@ -31,8 +31,8 @@ class Run {
 class Color {
     String name;
 
-    public Color(String names) {
-        this.name = names;
+    public Color(String name) {
+        this.name = name;
     }
 
     int[] redColorField;
