@@ -1,5 +1,7 @@
 package Objekts;
 
+import java.util.Arrays;
+
 class Run {
     /*
     Array of size 5, which will contain colors (color object)!
@@ -14,31 +16,35 @@ class Run {
 
     public static void main(String[] args) {
         Color[] colors = new Color[5];
-        String[] names = {"Red", "Blue", "Green", "White", "Yellow"};
+        colors[0] = new Color("Red", 255, 0, 0);
+        colors[1] = new Color("Blue", 0, 255, 0);
+        colors[2] = new Color("Green", 0, 0, 128);
+        colors[3] = new Color("White", 255, 255, 255);
+        colors[4] = new Color("Yellow", 255, 0, 255);
+
+
 
         for (int i = 0; i < 5; i++) {
-            colors[i] = new Color(names[i]);
-            colors[i].redColorField = new int[]{255, 0, 0, 255, 255};
-            colors[i].blueColorField = new int[]{0, 255, 0, 255, 0};
-            colors[i].greenColorField = new int[]{0, 0, 128, 255, 255};
-
-            colors[i].name = new String(String.valueOf(colors[i].name + ": " + colors[i].redColorField[i] + " " + colors[i].greenColorField[i] + " " + colors[i].blueColorField[i]));
-            System.out.println(colors[i].name);
+            System.out.println(colors[i].name + ": " + colors[i].redColorField  + " " + colors[i].greenColorField + " " + colors[i].blueColorField);
         }
     }
 }
 
 class Color {
     String name;
+    int redColorField;
+    int greenColorField;
+    int blueColorField;
 
-    public Color(String name) {
+    public Color(String name, int redColorField, int greenColorField, int blueColorField) {
         this.name = name;
-    }
+        this.redColorField = redColorField;
+        this.greenColorField = greenColorField;
+        this.blueColorField = blueColorField;
 
-    int[] redColorField;
-    int[] greenColorField;
-    int[] blueColorField;
+    }
 }
+
 
 
 
