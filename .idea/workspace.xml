@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40a1b5ec-d35e-483f-9291-d8d0d06bd1d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Color/Objekts/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Color/Objekts/Color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Color/Objekts/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Color/Objekts/Run.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Objekts/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objekts/Run.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613678199973</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="new objects with name and color fields">
+      <created>1613744305548</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1613744305549</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +174,8 @@
     <MESSAGE value="done objects with 3 fields" />
     <MESSAGE value="Changed colors field name and parameters" />
     <MESSAGE value="removed the extra code" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed the extra code" />
+    <MESSAGE value="new objects with name and color fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="new objects with name and color fields" />
   </component>
   <component name="WindowStateProjectService">
     <state x="131" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613490090167">
@@ -180,11 +186,11 @@
       <screen x="0" y="23" width="1280" height="714" />
     </state>
     <state x="512" y="133" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1280.714@0.23.1280.714" timestamp="1613503808297" />
-    <state x="464" y="23" key="CommitChangelistDialog2" timestamp="1613678199788">
-      <screen x="0" y="23" width="1280" height="716" />
+    <state x="464" y="23" key="CommitChangelistDialog2" timestamp="1613744305371">
+      <screen x="0" y="23" width="1280" height="714" />
     </state>
     <state x="464" y="23" key="CommitChangelistDialog2/0.23.1280.712@0.23.1280.712" timestamp="1613668764722" />
-    <state x="464" y="23" key="CommitChangelistDialog2/0.23.1280.714@0.23.1280.714" timestamp="1613668090332" />
+    <state x="464" y="23" key="CommitChangelistDialog2/0.23.1280.714@0.23.1280.714" timestamp="1613744305371" />
     <state x="464" y="23" key="CommitChangelistDialog2/0.23.1280.716@0.23.1280.716" timestamp="1613678199788" />
     <state x="244" y="23" key="CommitChangelistDialog2/0.23.1280.717@0.23.1280.717" timestamp="1613491036983" />
     <state width="607" height="143" key="GridCell.Tab.0.bottom" timestamp="1613744145829">
@@ -231,10 +237,11 @@
       <screen x="0" y="23" width="1280" height="714" />
     </state>
     <state width="1214" height="209" key="GridCell.Tab.1.right/0.23.1280.714@0.23.1280.714" timestamp="1613660923940" />
-    <state x="252" y="119" key="Vcs.Push.Dialog.v2" timestamp="1613678220669">
-      <screen x="0" y="23" width="1280" height="716" />
+    <state x="252" y="119" key="Vcs.Push.Dialog.v2" timestamp="1613744323342">
+      <screen x="0" y="23" width="1280" height="714" />
     </state>
     <state x="252" y="118" key="Vcs.Push.Dialog.v2/0.23.1280.712@0.23.1280.712" timestamp="1613669247650" />
+    <state x="252" y="119" key="Vcs.Push.Dialog.v2/0.23.1280.714@0.23.1280.714" timestamp="1613744323342" />
     <state x="252" y="119" key="Vcs.Push.Dialog.v2/0.23.1280.716@0.23.1280.716" timestamp="1613678220669" />
     <state x="252" y="119" key="Vcs.Push.Dialog.v2/0.23.1280.717@0.23.1280.717" timestamp="1613489141888" />
     <state x="441" y="300" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613668356039">

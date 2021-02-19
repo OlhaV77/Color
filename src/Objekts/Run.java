@@ -22,17 +22,17 @@ class Run {
             colors[i].blueColorField = new int[]{0, 255, 0, 255, 0};
             colors[i].greenColorField = new int[]{0, 0, 128, 255, 255};
 
-            colors[i].names = new String(String.valueOf(colors[i].names + ": " + colors[i].redColorField[i] + " " + colors[i].greenColorField[i] + " " + colors[i].blueColorField[i]));
-            System.out.println(colors[i].names);
+            colors[i].name = new String(String.valueOf(colors[i].name + ": " + colors[i].redColorField[i] + " " + colors[i].greenColorField[i] + " " + colors[i].blueColorField[i]));
+            System.out.println(colors[i].name);
         }
     }
 }
 
 class Color {
-    String names;
+    String name;
 
-    public Color(String name) {
-        this.names = name;
+    public Color(String names) {
+        this.name = names;
     }
 
     int[] redColorField;
