@@ -1,10 +1,5 @@
 package Objekts;
 
-import org.w3c.dom.ls.LSOutput;
-
-import javax.crypto.spec.PSource;
-import java.util.Scanner;
-
 class Run {
     /*
     Array of size 5, which will contain colors (color object)!
@@ -19,20 +14,19 @@ class Run {
 
     public static void main(String[] args) {
         Color[] colors = new Color[5];
-        String[] names = {"Red", "Blue", "Green", "White", "Orange"};
+        String[] names = {"Red", "Blue", "Green", "White", "Yellow"};
 
-        int redColorField = 245;
-        int greenColorField = 123;
-        int blueColorField = 03;
-
-        for (int i = 0; i < names.length; i++) {
+        for (int i = 0; i < 5; i++) {
             colors[i] = new Color(names[i]);
-            colors[i].names = new String(String.valueOf(colors[i].names + ": " + redColorField + " " + greenColorField + " " + blueColorField));
-                   System.out.println(colors[i].names);
-                }
-            }
-        }
+            colors[i].redColorField = new int[]{255, 0, 0, 255, 255};
+            colors[i].blueColorField = new int[]{0, 255, 0, 255, 0};
+            colors[i].greenColorField = new int[]{0, 0, 128, 255, 255};
 
+            colors[i].names = new String(String.valueOf(colors[i].names + ": " + colors[i].redColorField[i] + " " + colors[i].greenColorField[i] + " " + colors[i].blueColorField[i]));
+            System.out.println(colors[i].names);
+        }
+    }
+}
 
 class Color {
     String names;
@@ -44,14 +38,6 @@ class Color {
     int[] redColorField;
     int[] greenColorField;
     int[] blueColorField;
-
-    Color(int[] firstColor, int[] secondColor, int[] thirdColor) {
-        redColorField = firstColor;
-        greenColorField = secondColor;
-        blueColorField = thirdColor;
-    }
-
-
 }
 
 
